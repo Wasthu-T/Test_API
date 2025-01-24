@@ -9,3 +9,7 @@ def predict() :
         return aicontroller.predict()
     else:
         return response.badRequest(None, 'Terjadi kesalahan')
+
+@app.route('/')
+def home():
+    return "welcome"
